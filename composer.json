@@ -1,0 +1,32 @@
+{
+    "name": "hongyukeji/laravel-sms",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shadow",
+            "email": "admin@hongyuvip.com"
+        }
+    ],
+    "require": {
+        "hongyukeji/sms": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hongyukeji\\LaravelSms\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hongyukeji\\LaravelSms\\LaravelSmsServiceProvider"
+            ],
+            "alias": {
+                "Sms": "Hongyukeji\\LaravelSms\\Facades\\Sms"
+            }
+        }
+    }
+}
