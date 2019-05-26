@@ -22,7 +22,7 @@ if (!function_exists('sms')) {
 
 if (!function_exists('get_sms_code')) {
     /**
-     * 根据key获取短信模板Code
+     * 根据key获取短信模板Code或文字内容
      *
      * @param $key
      * @return \Illuminate\Config\Repository|mixed
