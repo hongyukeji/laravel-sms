@@ -1,6 +1,6 @@
 <h1 align="center"> laravel-sms </h1>
 
-<p align="center"> .</p>
+<p align="center"> :iphone: SMS - 短信发送，从未如此简单。全网首款支持所有短信服务商，自由扩展，无缝对接。</p>
 
 
 ## Installing
