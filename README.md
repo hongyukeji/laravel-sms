@@ -14,7 +14,7 @@ $ php artisan vendor:publish --provider="Hongyukeji\LaravelSms\LaravelSmsService
 ## Usage
 
 ```php
-$sms = sms('13952101395', 'verify_code', ['code' => '1234']);
+$sms = sms_send('13952101395', 'verify_code', ['code' => '1234']);
 print_r($sms);
 ```
 TODO
