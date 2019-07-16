@@ -2,7 +2,7 @@
 
 use HongYuKeJi\Helpers\Sms;
 
-if (!function_exists('sms')) {
+if (!function_exists('sms_send')) {
     /**
      * 短信
      *
@@ -12,7 +12,7 @@ if (!function_exists('sms')) {
      * @param null $smsGateway
      * @return mixed
      */
-    function sms($phoneNumbers, $templateCode, $templateParam = [], $smsGateway = null)
+    function sms_send($phoneNumbers, $templateCode, $templateParam = [], $smsGateway = null)
     {
         $config = config('sms');
         $gateway = $smsGateway ?: config('sms.driver');
