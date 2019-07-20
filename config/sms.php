@@ -4,11 +4,11 @@ return [
     'driver' => env('SMS_DRIVER', 'aliyun'),
 
     'default' => [
-        'gateway' => 'yunpian',
+        'gateway' => env('SMS_DEFAULT_GATEWAY', 'yunpian'),
     ],
 
     'config' => [
-        'debug' => false,
+        'debug' => env('SMS_CONFIG_DEBUG', false),
         'default_sign' => '',
         'verify_code' => [
             'limit_rule' => 'throttle:5',
