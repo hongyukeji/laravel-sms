@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'driver' => env('SMS_DRIVER', 'yunpian'),
+    'driver' => env('SMS_DRIVER', 'aliyun'),
 
     'default' => [
         'gateway' => 'yunpian',
@@ -9,11 +9,21 @@ return [
 
     'config' => [
         'debug' => false,
+        'default_sign' => '',
         'verify_code' => [
             'limit_rule' => 'throttle:5',
-            'expires_in' => '15',
-            'default_sign' => '',
+            'expires_at' => 60 * 15,
         ],
+        'templates' =>
+            [
+                'verify_code' => [
+                    'name' => '验证码',
+                    'key' => 'verify_code',
+                    'description' => '您的验证码是#code#。有效期为15分钟，请尽快验证！',
+                ],
+
+                // Other...
+            ],
     ],
 
     'gateways' => [
