@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "hongyukeji/sms": "^1.6"
+        "hongyukeji/sms": "^1.7"
     },
     "autoload": {
         "psr-4": {
