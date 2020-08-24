@@ -31,7 +31,7 @@ if (!function_exists('get_sms_code')) {
             $gateway = isset($config['default']) ? $config['default'] : null;
             return isset($config['templates'][$gateway][$template_code]) ? $config['templates'][$gateway][$template_code] : $template_code;
         } else {
-            $gateway = config('sms.default');
+            $gateway = config('sms.driver');
             return config("sms.templates.{$gateway}.{$template_code}", $template_code);
         }
     }

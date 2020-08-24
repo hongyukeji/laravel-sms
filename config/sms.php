@@ -1,7 +1,9 @@
 <?php
 
 return [
-    'default' => env('SMS_DRIVER', 'aliyun'),
+    'driver' => env('SMS_DRIVER', 'aliyun'),
+
+    'default' => env('SMS_DEFAULT', 'aliyun'),
 
     'gateways' => [
         'aliyun' => [
