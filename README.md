@@ -33,6 +33,9 @@ git tag
 git tag v1.0.0
 
 git push origin v1.0.0 master
+
+# Git报错解决：fatal: unable to access 'https://github.com/.......': OpenSSL SSL_read: Connection was reset, errno 10054
+git config --global http.sslVerify "false"
 ```
 
 ## Contributing
