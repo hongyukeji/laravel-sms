@@ -22,7 +22,7 @@ if (!function_exists('sms_send')) {
         // 验证是否是国际号码
         $is_international_mobile = !is_mobile_number($verify_mobile_number);
         // 判断手机号是否为国际号码
-        if ($is_international_mobile) {
+        if ($is_international_mobile && !empty($sms_config['international'])) {
             $sms_config = array_replace_recursive($sms_config, !empty($sms_config['international']) ? $sms_config['international'] : []);
             config(["sms" => $sms_config]);
         }
