@@ -134,4 +134,18 @@ return [
             'verify_code' => '您的验证码是{$var}。有效期为15分钟，请尽快验证！',
         ],
     ],
+
+    'international' => [
+        'gateways' => [
+            'aliyun' => [
+                'signName' => env('SMS_ALIYUN_INTERNATIONAL_SIGNNAME'),
+            ],
+        ],
+        'templates' => [
+            'aliyun' => [
+                'verify_code' => env('SMS_ALIYUN_INTERNATIONAL_VERIFICATION_CODE', 'SMS_00000000'),
+            ],
+        ],
+    ],
+
 ];
