@@ -17,26 +17,6 @@ $ php artisan vendor:publish --provider="Hongyukeji\LaravelSms\LaravelSmsService
 $sms = sms_send('13800138000', 'verify_code', ['code' => '1234']);
 print_r($sms);
 ```
-## Git
-
-```shell
-# 上传 修改
-git add . && git commit -a -m "Initial commit" && git push origin master --force
-
-# 拉取 更新并强制覆盖本地文件
-$ git fetch --all && git reset --hard origin/master && git pull
-
-# git版本号
-
-git tag
-
-git tag v1.0.0
-
-git push origin v1.0.0 master
-
-# Git报错解决：fatal: unable to access 'https://github.com/.......': OpenSSL SSL_read: Connection was reset, errno 10054
-git config --global http.sslVerify "false"
-```
 
 ## Contributing
 
